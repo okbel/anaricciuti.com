@@ -25,8 +25,8 @@ main {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: #fafafa;
+  position: relative;
 }
 
 .image-container {
@@ -70,6 +70,7 @@ a {
 
 header {
   display: flex;
+  text-align: left;
 }
 
 header .space {
@@ -78,7 +79,6 @@ header .space {
 
 header .list {
   flex: 0;
-  text-align: right;
 }
 
 footer .list {
@@ -96,4 +96,20 @@ span .fa {
 
 .list li:hover span.fa {
   color: #75919c;
+}
+
+@media (min-width: 700px) {
+  .important {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+  }
+}
+
+hr {
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+  width: 100%;
 }
