@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  line-height: 1.8;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: #eaeaea;
+}
+
+main {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1), 3px 5px 20px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  width: 88%;
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+.image-container {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  background-image: url("./profile.jpeg");
+  background-position: center center;
+  background-size: 200px 200px;
+  border: solid 4px #eaeaea;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.headline {
+  margin-bottom: 0.5rem;
+  line-height: normal;
+}
+
+.sub-headline {
+  margin: 0 0 1rem;
+  line-height: normal;
+}
+
+.green {
+  color: #25a735;
+}
+
+.blue {
+  color: #094fc5;
+}
+
+a {
+  color: inherit;
+}
+
+header {
+  display: flex;
+}
+
+header .space {
+  flex: 1;
+}
+
+header .list {
+  flex: 0;
+  text-align: right;
+}
+
+footer .list {
+  display: flex;
+  flex-flow: row;
+}
+
+footer .list li {
+  margin: 0 0.4rem;
+}
+
+span .fa {
+  transition: color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.list li:hover span.fa {
+  color: #75919c;
+}
